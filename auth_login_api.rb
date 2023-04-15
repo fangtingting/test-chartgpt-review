@@ -116,6 +116,7 @@ class AuthLoginApi < Grape::API
       elsif not_found_firms.present?
         Rails.logger.info "not_found_firms: #{params[:firms]}"
       end
+      Rails.logger.info "not_found_firms"
       response
     end
   end
